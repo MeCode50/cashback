@@ -1,0 +1,158 @@
+:root {
+	--primary-color: #dc2626;
+	--text-primary: #1f2937;
+	--text-secondary: rgba(31, 41, 55, 0.6);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+.main-container {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 2rem;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 2rem;
+	min-height: 100vh;
+}
+
+@media (max-width: 1024px) {
+	.main-container {
+		grid-template-columns: 1fr;
+		padding: 1rem;
+	}
+}
+
+.focus-visible:focus {
+	outline: 2px solid var(--primary-color);
+	outline-offset: 2px;
+}
+
+.skip-link {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	background: var(--primary-color);
+	color: white;
+	padding: 8px;
+	z-index: 100;
+	transition: top 0.2s;
+}
+
+.skip-link:focus {
+	top: 0;
+}
+
+.form-input {
+	width: 100%;
+	padding: 0.875rem 1.25rem;
+	border-radius: 0.75rem;
+	border: 1px solid rgba(31, 41, 55, 0.3);
+	background: white;
+	transition: border-color 0.2s;
+}
+
+.form-input:focus {
+	border-color: var(--primary-color);
+	outline: none;
+	box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.2);
+}
+
+.button-primary {
+	background: var(--primary-color);
+	color: white;
+	padding: 1rem 2rem;
+	border-radius: 0.75rem;
+	border: none;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.button-primary:hover {
+	background-color: #b91c1c;
+}
+
+.button-primary:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px white, 0 0 0 4px var(--primary-color);
+}
+
+.progress-step {
+	position: relative;
+	cursor: pointer;
+}
+
+.progress-step::after {
+	content: "";
+	position: absolute;
+	left: 24px;
+	top: 100%;
+	width: 2px;
+	height: 40px;
+	background: var(--primary-color);
+	opacity: 0.2;
+}
+
+.progress-step:last-child::after {
+	display: none;
+}
+
+.section-content {
+	display: none;
+}
+
+.section-content.active {
+	display: block;
+}
+
+.progress-step.active .step-indicator {
+	background-color: var(--primary-color);
+}
+
+.progress-step.active h3 {
+	color: var(--primary-color);
+}
+
+.verification-stage {
+	display: none;
+}
+
+.verification-stage.active {
+	display: block;
+	animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.store-select-button {
+	width: 100%;
+	text-align: left;
+	transition: all 0.2s;
+}
+
+.store-select-button[aria-checked="true"] {
+	border-color: #dc2626;
+	background-color: rgba(220, 38, 38, 0.05);
+}
+
+.store-select-button:focus {
+	outline: none;
+	box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.2);
+}
