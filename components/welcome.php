@@ -1,6 +1,6 @@
 <header class="flex items-center gap-3 mb-8">
     <img
-        src="img/sentinel.jpg"
+        src="assets/img/sentinel.jpg"
         alt="Sentinel Logo"
         width="31"
         height="46" />

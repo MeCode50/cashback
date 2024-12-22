@@ -32,7 +32,7 @@ include("components/head.php")
                                 aria-hidden="true"></div>
                             <div class="flex items-center gap-3">
                                 <img
-                                    src="img/user-story.jpg"
+                                    src="assets/img/user-story.jpg"
                                     alt=""
                                     width="52"
                                     height="52"
@@ -53,7 +53,7 @@ include("components/head.php")
                                 aria-hidden="true"></div>
                             <div class="flex items-center gap-3">
                                 <img
-                                    src="img/credit-card-pos.jpg"
+                                    src="assets/img/credit-card-pos.jpg"
                                     alt=""
                                     width="52"
                                     height="52"
@@ -74,7 +74,7 @@ include("components/head.php")
                                 aria-hidden="true"></div>
                             <div class="flex items-center gap-3">
                                 <img
-                                    src="img/checkmark-badge-02.jpg"
+                                    src="assets/img/checkmark-badge-02.jpg"
                                     alt=""
                                     width="52"
                                     height="52"
@@ -93,7 +93,7 @@ include("components/head.php")
                 class="cashback-promo relative rounded-xl bg-cover bg-center text-black mb-8"
                 role="complementary">
                 <img
-                    src="img/group.jpg"
+                    src="assets/img/group.jpg"
                     alt=""
                     class="rounded-xl"
                     aria-hidden="true" />
@@ -110,7 +110,7 @@ include("components/head.php")
             <header class="border-b border-neutral-800 border-opacity-30 pb-6 mb-9">
                 <div class="flex items-center gap-3.5">
                     <img
-                        src="img/user-story.jpg"
+                        src="assets/img/user-story.jpg"
                         alt=""
                         width="52"
                         height="52"
@@ -263,7 +263,7 @@ include("components/head.php")
                     <legend class="text-base font-semibold text-neutral-800 mb-5">Cost</legend>
                     <div class="bg-amber-200 bg-opacity-20 p-4 rounded-xl flex items-center gap-3">
                         <img
-                            src="img/check.png"
+                            src="assets/img/check.png"
                             alt=""
                             width="24"
                             height="24"
@@ -294,7 +294,7 @@ include("components/head.php")
                     class="button-primary w-full md:w-auto flex items-center justify-center gap-2.5">
                     Proceed to make payment
                     <img
-                        src="img/arrow-right-02.jpg"
+                        src="assets/img/arrow-right-02.jpg"
                         alt=""
                         width="24"
                         height="24"
@@ -316,7 +316,7 @@ include("components/head.php")
                 <header class="border-b border-neutral-800 border-opacity-30 pb-6 mb-9">
                     <div class="flex items-center gap-3.5">
                         <img
-                            src="img/checkmark-badge-02.jpg"
+                            src="assets/img/checkmark-badge-02.jpg"
                             alt=""
                             width="52"
                             height="52"
